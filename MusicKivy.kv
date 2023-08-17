@@ -1,0 +1,19 @@
+<Container>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 20
+    text_input: text_input
+
+    TextInput:
+        text: ''
+        multiline: False
+        font_size: 30
+        id: text_input
+
+    FloatLayout:
+        Button:
+            text: 'Start'
+            size_hint: 0.4, 0.63
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            on_release:
+                root.change_something()
